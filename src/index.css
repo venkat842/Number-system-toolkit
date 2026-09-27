@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --font-heading: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --color-ink: #0A0A0A;
+  --color-paper: #FAFAF7;
+  --color-signal: #FF8A00;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-cursor-blink {
+  animation: blink 1s step-end infinite;
+}

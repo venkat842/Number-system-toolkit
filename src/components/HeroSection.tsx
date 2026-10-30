@@ -42,16 +42,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       className="h-screen w-full flex flex-col justify-end md:justify-center pb-12 md:pb-0 px-5 sm:px-8 md:px-10 overflow-hidden relative z-10 select-text"
     >
       <div className="max-w-xl relative z-10">
-        {/* 1. Blurred Intro Label */}
+        {/* 1. Intro Label */}
         <div
-          className="pointer-events-none select-none mb-5 sm:mb-6 font-body text-[var(--color-ink)]"
+          className="mb-5 sm:mb-6 font-body text-[var(--color-ink)]"
           style={{
             fontSize: 'clamp(18px, 4vw, 26px)',
             lineHeight: 1.3,
             fontWeight: 400,
-            filter: 'blur(4px)',
           }}
-          aria-hidden="true"
         >
           Hey — this is the Number System Toolkit,
           <br />
